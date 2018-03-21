@@ -7,10 +7,12 @@ PwmOut speaker(D6);
 
 int main()
 {
-    while (1) {
+    while (1)
+    {
         float f;
         green.write(1);
-        for (f=20.0; f<20.0e3; f+=100) {
+        for (f=20.0; f<20.0e3; f+=100)
+        {
             speaker.period(1.0/f);
             speaker.write(0.5);
             wait(0.1);

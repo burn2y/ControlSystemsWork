@@ -52,7 +52,7 @@ void dashboard(void)
   char dashBuffer[1024];
   //(dashBuffer, "orientation:%s\n", orientation1);
 
-  printf("Orientation%s\n", orientation1);
+  printf("Orientation%s\n", orientation1); // ...... but this line does not
 
   send(dashBuffer, strlen(dashBuffer), dash);
 }
@@ -174,9 +174,9 @@ void communications(void)
     tok = strtok(NULL, "\n");
     strcpy(velocityY, tok);
 
-    printf("Orientation%s\n", orientation1);
+    printf("Orientation%s\n", orientation1); // This line prints the orientation1 character array.....
 
-    dashboard();
+    dashboard(); //  function call made to dashboard
 }
 
 /* Task for polling sensors */

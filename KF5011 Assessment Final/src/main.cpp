@@ -52,8 +52,7 @@ void dashboard(void)
   char dashBuffer[1024];
   //(dashBuffer, "orientation:%s\n", orientation1);
 
-  int status = printf("Orientation%s\n", orientation1);
-  printf("Printf return value: %d\n", status);
+  printf("Orientation%s\n", orientation1);
 
   send(dashBuffer, strlen(dashBuffer), dash);
 }
